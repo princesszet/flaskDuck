@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html>
+  <body>
+
+  <h1>My First Heading</h1>
+
+  <p>{{message}}</p>
+  <button onmouseover="clicked()">Click me to see ducks</button>
+  <img id="duckImage" src="images/cuteDuck.jpeg">
+
+  </body>
+  <script>
+  function clicked(){
+    if(document.getElementById("duckImage").style.visibility == 'hidden'){
+      document.getElementById("duckImage").style.visibility = 'visible';
+    }
+    else{
+      document.getElementById("duckImage").style.visibility = 'hidden';
+    }
+  }
+  </script>
+  </html>
